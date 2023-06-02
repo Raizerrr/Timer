@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <!-- cach lam 1 slider don gian 
+    gom co cac phan  -->
+    <!--1 slider -->
+    <div class="container-fluid slider position-relative d-flex">
+
+      <!-- 2 la slider wraper de noi dung hien thi trong slider(1) -->
+      <div class="container-fluid timer-app p-0 ">
+        <button class="position-absolute button-slider-left"><i class="ti-angle-left"></i></button>
+        <button class="position-absolute button-slider-right"><i class="ti-angle-right"></i></button>
+        <ul class="slider-taskbar">
+          <li class="slider-task">
+            <i class="ti-alarm-clock"></i>
+          </li>
+          <li class="slider-task">
+            <i class="ti-alarm-clock"></i>
+          </li>
+        </ul>
+        <!--2 slider main : chua nhung slider Items-->
+        <div class="timer-container position-relative" id="timer-container">
+
+          <!--3 slider items-->
+          <div class=" timer-item stop-timer">
+            <div class="container stopWatch-container">
+              <div class="clock">
+                <div class="hour">
+                  <div class="hr" id="hr"></div>
+                </div>
+                <div class="min">
+                  <div class="mn" id="mn"></div>
+                </div>
+                <div class="sec">
+                  <div class="sc" id="sc"></div>
+                </div>
+
+              </div>
+
+              <div class="stopWatch">
+                <div class="time-display">
+                  <span id="seconds">00</span> : <span id="tens">00</span>
+                </div>
+
+                <div class="controller">
+                  <button class="start-button" id="start-button">Start</button>
+                  <button class="stop-button" id="stop-button">Stop</button>
+                  <button class="reset-button" id="reset-button">reset</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timer-item default-watch position-relative">
+            <div class="my-timer position-absolute" id="my-timer">
+
+              <span id="crrt-hour">00</span> : <span id="crrt-minute">00</span> : <span id="crrt-second">00</span>
+            </div>
+
+            <button id="crrt-time" class="display-time-btn">Current Time</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
